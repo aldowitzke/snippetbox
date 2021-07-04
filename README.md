@@ -1,4 +1,4 @@
-# snippetbox
+# Snippetbox
 
 Snippetbox is a application similar to [Github Gists](https://gist.github.com/) where you can create snippets.
 
