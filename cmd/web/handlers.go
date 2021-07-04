@@ -97,7 +97,7 @@ func (app *application) signupUser(w http.ResponseWriter, r *http.Request) {
 	form.MaxLength("name", 255)
 	form.MaxLength("email", 255)
 	form.MatchesPattern("email", forms.EmailRX)
-	form.MinLength("password", 6)
+	form.MinLength("password", 10)
 
 	if !form.Valid() {
 		app.render(w, r, "signup.page.tmpl", &templateData{Form: form})
